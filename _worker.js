@@ -13,15 +13,6 @@ const Config = {
 
 const whiteList = [] // 白名单，路径里面有包含字符的才会通过，e.g. ['/username/']
 
-/** @type {ResponseInit} */
-const PREFLIGHT_INIT = {
-    status: 204,
-    headers: new Headers({
-        'access-control-allow-origin': '*',
-        'access-control-allow-methods': 'GET,POST,PUT,PATCH,TRACE,DELETE,HEAD,OPTIONS',
-        'access-control-max-age': '1728000',
-    }),
-}
 
 
 const exp1 = /^(?:https?:\/\/)?github\.com\/.+?\/.+?\/(?:releases|archive)\/.*$/i
